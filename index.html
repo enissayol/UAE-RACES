@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UAE Running Races Calendar</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    h1 { text-align: center; }
+    #search { margin: 15px auto; display: block; padding: 8px; width: 60%; font-size: 16px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+    th { cursor: pointer; background: #eee; }
+    tr.closed { background-color: #fdd !important; }
+    tr.open { background-color: #dfd !important; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>UAE Running Races Calendar</h1>
+  <input type="text" id="search" placeholder="Search races...">
+  
+  <table id="racesTable">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Race</th>
+        <th>Location</th>
+        <th>Distances</th>
+        <th>Category</th>
+        <th>Start Time</th>
+        <th>Fee</th>
+        <th>Early Bird</th>
+        <th>Registration</th>
+        <th>Status</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function loadRaces() {
+      const response = await fetch('races.json');
+      const races = await response.json();
+      const tbody = document.querySelector('#racesTable tbody');
+      tbody.innerHTML = '';
+
+      races.forEach(race => {
+        const tr = document.createElement('tr');
+        const today = new Date();
+        const raceDate = new Date(race.date);
+        const isOpen = raceDate >= today;
+
+        tr.classList.add(isOpen ? 'open' : 'closed');
+
+        tr.innerHTML = `
+          <td>${race.date}</td>
+          <td>${race.name}</td>
+          <td>${race.location || ''}</td>
+          <td>${race.distances || ''}</td>
+          <td>${race.category || ''}</td>
+          <td>${race.startTime || ''}</td>
+          <td>${race.fee || ''}</td>
+          <td>${race.earlyBird || ''}</td>
+          <td><a href="${race.registration}" target="_blank">Register</a></td>
+          <td>${isOpen ? 'Open' : 'Closed'}</td>
+          <td>${race.source}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    document.getElementById('search').addEventListener('keyup', function () {
+      const filter = this.value.toLowerCase();
+      const rows = document.querySelectorAll('#racesTable tbody tr');
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+
+    loadRaces();
+  </script>
+</body>
+</html>

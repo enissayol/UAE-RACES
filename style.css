@@ -1,0 +1,10 @@
+
+
+/* Custom styles */
+body { background-color: #f9f9f9; font-family: Arial, sans-serif; }
+table { margin-top: 20px; border-collapse: collapse; width: 100%; background-color: #fff; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+tr.closed { background-color: #fdd !important; }
+tr.open { background-color: #dfd !important; }
+a { color: #0066cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
