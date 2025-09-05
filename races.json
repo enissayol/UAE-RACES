@@ -10,7 +10,77 @@
     "earlyBird": "AED 120 until Aug 15, 2025",
     "registration": "https://www.hopasports.com/al-ain-half-marathon",
     "source": "Hopasports"
+  },
+  {
+    "date": "2025-10-05",
+    "name": "Spinneys Community Run 1",
+    "location": "Dubai",
+    "distances": "3 / 5 km",
+    "category": "Community",
+    "startTime": "7:00 AM",
+    "fee": "60 AED",
+    "earlyBird": "AED 50 until Sep 15, 2025",
+    "registration": "https://www.supersportsuae.com/events",
+    "source": "SuperSports"
+  },
+  {
+    "date": "2025-11-14",
+    "name": "NAS Night Run",
+    "location": "Dubai (Nad Al Sheba)",
+    "distances": "5 / 10 km",
+    "category": "Night Run",
+    "startTime": "9:00 PM",
+    "fee": "125 AED",
+    "earlyBird": "AED 100 until Oct 15, 2025",
+    "registration": "https://www.premieronline.com",
+    "source": "PremierOnline"
+  },
+  {
+    "date": "2025-12-06",
+    "name": "UAQ Half Marathon",
+    "location": "Umm Al Quwain",
+    "distances": "5 / 10 / 21 km",
+    "category": "Half Marathon",
+    "startTime": "7:00 AM",
+    "fee": "170 AED",
+    "earlyBird": "AED 140 until Nov 10, 2025",
+    "registration": "https://www.hopasports.com",
+    "source": "Hopasports"
+  },
+  {
+    "date": "2026-01-24",
+    "name": "Dubai Marathon",
+    "location": "Dubai",
+    "distances": "4 / 10 / 42 km",
+    "category": "Marathon",
+    "startTime": "6:00 AM",
+    "fee": "350 AED",
+    "earlyBird": "AED 300 until Dec 15, 2025",
+    "registration": "https://www.dubaimarathon.org",
+    "source": "Official"
+  },
+  {
+    "date": "2026-02-15",
+    "name": "RAK Half Marathon",
+    "location": "Ras Al Khaimah",
+    "distances": "10 / 21 km",
+    "category": "Half Marathon",
+    "startTime": "7:00 AM",
+    "fee": "250 AED",
+    "earlyBird": "AED 200 until Jan 15, 2026",
+    "registration": "https://www.premieronline.com",
+    "source": "PremierOnline"
+  },
+  {
+    "date": "2026-05-02",
+    "name": "Spinneys Community Run 4",
+    "location": "Dubai",
+    "distances": "3 / 5 km",
+    "category": "Community",
+    "startTime": "7:00 AM",
+    "fee": "60 AED",
+    "earlyBird": "AED 50 until Apr 15, 2026",
+    "registration": "https://www.supersportsuae.com/events",
+    "source": "SuperSports"
   }
 ]
-
-
