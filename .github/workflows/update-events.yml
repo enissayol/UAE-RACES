@@ -1,0 +1,36 @@
+name: Update Running Events Data
+
+on:
+  workflow_dispatch: # Allow manual triggering
+  schedule:
+    - cron: '0 0 * * 0' # Run every Sunday at midnight UTC
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install axios cheerio
+
+    - name: Run update script
+      run: node scripts/update-events.js
+
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/uae_running_events.json
+        git diff --staged --quiet || git commit -m "Update running events data - $(date +'%Y-%m-%d')"
+        git push
