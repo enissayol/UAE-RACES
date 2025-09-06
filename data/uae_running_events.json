@@ -1,0 +1,46 @@
+[
+  {
+    "name": "NBF Fujairah Run",
+    "date": "22/11/2025",
+    "distances": "11km Trail, 10km, 5km, 3km Road",
+    "location": "Fujairah",
+    "category": "trail",
+    "price": "TBA",
+    "earlyBird": "Not specified",
+    "registrationLink": "https://www.premieronline.com/event/nbf-fujairah-run",
+    "source": "Premier Online"
+  },
+  {
+    "name": "Community Run @ The Ripe Market | 2",
+    "date": "14/12/2025",
+    "distances": "15km, 10km, 5km, 2.5km",
+    "location": "The Ripe Market, Dubai Police Academy",
+    "category": "community",
+    "price": "156 (15km), 137 (10km), 126 (5km), 116 (2.5km)",
+    "earlyBird": "No",
+    "registrationLink": "https://www.hopasports.com/en/event/community-run-the-ripe-market-2",
+    "source": "Hopasports"
+  },
+  {
+    "name": "Umm Al Quwain Half Marathon 2026",
+    "date": "11/01/2026",
+    "distances": "Half Marathon (21.1km), 10km, 5km, 1 Mile",
+    "location": "Vida Beach Resort, Umm Al Quwain",
+    "category": "elite",
+    "price": "From 50 (1M) to 145 (HM)",
+    "earlyBird": "Yes (Until 15/04/2026)",
+    "registrationLink": "https://www.hopasports.com/en/event/umm-al-quwain-half-marathon-2026",
+    "source": "Hopasports"
+  },
+  {
+    "name": "NAS Sports Tournament - Running Race",
+    "date": "08/03/2025",
+    "distances": "10km, 5km, 4km",
+    "location": "Meydan Racecourse, Dubai",
+    "category": "elite",
+    "price": "TBA",
+    "earlyBird": "Not specified",
+    "registrationLink": "https://registration.nasst.ae/",
+    "source": "NAS Sports"
+  }
+]
